@@ -1,0 +1,4 @@
+line by input
+
+for loop 1 until to 100
+
