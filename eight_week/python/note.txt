@@ -1,0 +1,9 @@
+0 1 2 3 4 5 6
+a n i r a c h
+
+index = 0 > A
+index = 1 + 1 (index + index) = 2 > AnI
+index = 2 + 2 (index + index) = 4 > AnIR
+index = 3 + 3 (index + index) = 6 > AnIRaCH 
+
+2 4 6
