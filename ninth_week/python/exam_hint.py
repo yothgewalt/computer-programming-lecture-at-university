@@ -1,7 +1,5 @@
-from os import sep
-
-
 message = input("\nEnter a string you want to swarp words: ")
+print(message.split())
 separate_words = message.split()
 
 print("Separate words:")
