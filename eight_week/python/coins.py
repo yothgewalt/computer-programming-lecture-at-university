@@ -1,4 +1,4 @@
-from turtle import color
+from turtle import color, left
 import pgzrun
 from random import randint
 
@@ -22,7 +22,7 @@ def draw():
     screen.draw.text('Score: ' + str(score), color='black', topleft=(10, 10))
     
     if game_over:
-        screen,fill('black')
+        screen.fill('black')
         message = 'Final Score: ' + str(score)
         screen.draw.text(message, topleft=(10, 10), fontsize=50)
     
@@ -40,6 +40,12 @@ def update():
         fox.y = fox.y - 8
     elif keyboard.down:
         fox.y = fox.y + 8
+        
+    if fox.left > WIDTH:
+        fox.right = 0
+    
+    elif fox.right > WIDTH:
+        fox.left = 0
         
     coin_collected = fox.colliderect(coin)
     if coin_collected:
